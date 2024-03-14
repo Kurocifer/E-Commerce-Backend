@@ -1,4 +1,4 @@
-package com.tutorial.ecommercebackend.module;
+package com.tutorial.ecommercebackend.model;
 
 import jakarta.persistence.*;
 
