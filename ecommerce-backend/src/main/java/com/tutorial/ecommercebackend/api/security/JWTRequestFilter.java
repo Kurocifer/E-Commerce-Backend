@@ -51,7 +51,7 @@ public class JWTRequestFilter extends OncePerRequestFilter {
           SecurityContextHolder.getContext().setAuthentication(authentication);
         }
       } catch (JWTDecodeException ignored) {
-   
+
       }
     }
     filterChain.doFilter(request, response);
