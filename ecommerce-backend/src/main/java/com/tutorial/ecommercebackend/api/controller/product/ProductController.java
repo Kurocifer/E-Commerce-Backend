@@ -23,5 +23,3 @@ public class ProductController {
     return productService.getProducts();
   }
 }
-
-/* Not yet tested */

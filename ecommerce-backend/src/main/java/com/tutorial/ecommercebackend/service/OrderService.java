@@ -20,5 +20,3 @@ public class OrderService {
     return webOrderDAO.findByUser(user);
   }
 }
-
-/* Not tested */

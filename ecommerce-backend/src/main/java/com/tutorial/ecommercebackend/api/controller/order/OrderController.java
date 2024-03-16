@@ -25,5 +25,3 @@ public class OrderController {
     return orderService.getOrders(user);
   }
 }
-
-/* Not yet tested */

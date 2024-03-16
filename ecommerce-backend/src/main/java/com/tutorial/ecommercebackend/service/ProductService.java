@@ -19,5 +19,3 @@ public class ProductService {
     return productDAO.findAll();
   }
 }
-
-/* Not yet tested */

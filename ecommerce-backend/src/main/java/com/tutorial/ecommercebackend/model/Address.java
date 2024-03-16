@@ -1,5 +1,6 @@
 package com.tutorial.ecommercebackend.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 
 @Entity
@@ -24,6 +25,8 @@ public class Address {
   @Column(name = "country", nullable = false, length = 75)
   private String country;
   /** The user the address is associated with. */
+
+  @JsonIgnore
   @ManyToOne(optional = false)
   @JoinColumn(name = "user_id", nullable = false)
   private LocalUser user;
