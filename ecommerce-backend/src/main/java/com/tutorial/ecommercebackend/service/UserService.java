@@ -89,11 +89,9 @@ public class UserService {
             emailService.sendVerificationEmail(verificationToken);
             verificationTokenDAO.save(verificationToken);
           }
-
           throw new UserNotVerifiedException(resend);
         }
       }
-
     }
     return null;
   }
