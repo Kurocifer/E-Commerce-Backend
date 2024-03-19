@@ -38,9 +38,11 @@ public class LocalUser {
   /** Verification tokens sent to the user. */
   @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true)
   @OrderBy("id desc")
+  @JsonIgnore
   private List<VerificationToken> verificationTokens = new ArrayList<>();
   /** Has the users email been verified? */
   @Column(name = "email_verified", nullable = false)
+  @JsonIgnore
   private Boolean emailVerified = false;
 
   /**
