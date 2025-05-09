@@ -1,1 +1,1 @@
-# SprngBoot E-Commerce API
+# Spring Boot E-Commerce API
